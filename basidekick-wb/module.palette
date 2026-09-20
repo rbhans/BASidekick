@@ -531,12 +531,6 @@
           </p>
         </p>
       </p>
-      <p n="Data$20Displays" t="b:UnrestrictedFolder">
-        <p n="Value$20Card" m="wb=workbench" t="wb:WebWidget">
-          <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,260.0,120.0" />
-          <p n="js" t="b:Ord" v="view:basidekick:ValueCardWidget" />
-        </p>
-      </p>
     </p>
     <p n="Navigation" t="b:Folder">
       <p n="Dropdown" m="bask=basidekick" t="bask:NavigationDropdown">

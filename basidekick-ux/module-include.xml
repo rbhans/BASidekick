@@ -18,7 +18,6 @@
   <type class="com.qagraphics.basidekick.ux.BLinkPlannerWidget" name="LinkPlannerWidget">
     <agent><on type="basidekick:LinkPlanner" /></agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BValueCardWidget" name="ValueCardWidget" />
   <type class="com.qagraphics.basidekick.ux.BInspectorWidget" name="InspectorWidget">
     <agent><on type="control:ControlPoint" /></agent>
   </type>
