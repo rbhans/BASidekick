@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="#2F2F2F">
+          <path d="M12 12c-1.2-3.8-.6-7 1.5-8 1.8-.9 3.4.5 2.9 2.3-.5 2.1-2.1 4.3-4.4 5.7z"></path>
+          <path d="M12 12c-1.2-3.8-.6-7 1.5-8 1.8-.9 3.4.5 2.9 2.3-.5 2.1-2.1 4.3-4.4 5.7z" transform="rotate(120 12 12)"></path>
+          <path d="M12 12c-1.2-3.8-.6-7 1.5-8 1.8-.9 3.4.5 2.9 2.3-.5 2.1-2.1 4.3-4.4 5.7z" transform="rotate(240 12 12)"></path>
+          <circle cx="12" cy="12" r="2.4"></circle>
+        </svg>
+

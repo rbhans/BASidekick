@@ -1,0 +1,15 @@
+# Niagara and Gradle build outputs
+**/build/
+.gradle/
+
+# macOS resource forks and Finder metadata
+._*
+.DS_Store
+
+# Local Python/Node verification caches
+**/__pycache__/
+*.pyc
+node_modules/
+
+# Generated preview media
+task-reports/*.png

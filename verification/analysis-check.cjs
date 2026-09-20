@@ -1,0 +1,34 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const vm = require('node:vm');
+const path = require('node:path');
+let Analysis;
+vm.runInNewContext(fs.readFileSync(path.join(__dirname,'../basidekick-ux/src/rc/widgets/TrendAnalysis.js'),'utf8'), {
+  define: (_deps, factory) => { Analysis = factory(null); }, Date, Number, JSON
+});
+let rows = [[0,0,true,'ok'],[9000,10,true,'ok']];
+for (const value of [null, undefined, '', 'null', ' NULL ', 'undefined']) assert.equal(Analysis.unitLabel(value), '');
+for (const value of ['°F', '°C', '%', 'kWh', 'm³/h']) assert.equal(Analysis.unitLabel(value), value);
+assert.equal(Analysis.stats(rows,0,10000,10000,'sample').mean,5);
+assert.equal(Analysis.stats(rows,0,10000,10000,'time').mean,1);
+rows = [[50000,20,true,'ok'],[0,0,true,'ok'],[20000,null,false,'fault'],[10000,10,true,'ok']];
+let s = Analysis.stats(rows,0,60000,15000,'time');
+assert.equal(s.mean,10); assert.equal(s.count,3); assert.equal(s.excluded,1);
+assert.equal(s.coverage,.5); assert.equal(s.largestGap,40000);
+assert.equal(s.min[0],0); assert.equal(s.max[0],50000);
+s = Analysis.stats([[0,4,true],[0,8,true],[1000,12,true]],0,2000,5000,'time');
+assert.equal(s.mean,10); assert.equal(s.coverage,1);
+s = Analysis.stats([[2000,99,true],[1000,NaN,true]],0,2000,5000,'sample');
+assert.equal(s.count,0); assert.equal(s.mean,null);
+s = Analysis.stats([],0,1000,1000,'time');
+assert.equal(s.mean,null); assert.equal(s.coverage,0); assert.equal(s.largestGap,1000);
+assert.throws(()=>Analysis.settings({mode:'wrong'}));
+assert.throws(()=>Analysis.settings({gapMinutes:1.5}));
+assert.throws(()=>Analysis.settings({gapMinutes:0}));
+assert.throws(()=>Analysis.settings({gapMinutes:10081}));
+const exportText = Analysis.csv([{ord:'history:/Demo/X',name:'=HYPERLINK("x")',units:'°C',range:{start:0,end:1000},samples:[[100,-10,true,'ok']],truncated:true}]);
+assert(exportText.includes('"\'=HYPERLINK(""x"")"'));
+assert(exportText.includes('"-10","true","ok","true"'));
+assert(exportText.includes('query_truncated'));
+assert.equal(Analysis.range('last24Hours',100000000).start,100000000-86400000);
+console.log('PASS: irregular sampling, time/sample weighting, invalid samples, gaps and coverage, duplicate timestamps, empty ranges, half-open range, settings validation, CSV formula escaping and truncation metadata.');

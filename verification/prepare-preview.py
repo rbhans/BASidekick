@@ -1,0 +1,17 @@
+"""Prepare a temporary UI fixture using current basidekick JavaScript (no station)."""
+from pathlib import Path
+import shutil, zipfile
+root = Path(__file__).resolve().parents[1]
+output = Path('/tmp/basidekick-ui-check')
+output.mkdir(exist_ok=True)
+with zipfile.ZipFile('/Volumes/[C] Niagara/JENEsys/JENEsys-ProBuilder-N4.15.3.28/modules/js-ux.jar') as z:
+    (output / 'jquery.js').write_bytes(z.read('rc/jquery/jquery.js'))
+for filename in ('UiFoundation.js', 'InspectorPanel.js', 'SavedCharts.js', 'TrendAnalysis.js',
+                 'RecentChanges.js', 'OperationsOverview.js', 'OperationsDashboard.js',
+                 'ValueCard.js', 'InspectorWidget.js', 'ZoneDeviationMatrix.js', 'LinkPlanner.js'):
+    shutil.copyfile(root / 'basidekick-ux/src/rc/widgets' / filename, output / filename)
+for filename in ('dropdown.js', 'dropdown.css'):
+    shutil.copyfile(root / 'basidekick-ux/src/rc/navigation' / filename, output / filename)
+shutil.copyfile(root / 'verification/fixture.js', output / 'fixture.js')
+(output / 'index.html').write_text('''<!doctype html><html><head><meta charset="utf-8"><link rel="stylesheet" href="dropdown.css"><style>body{margin:0;padding:20px;background:#e8edf2;font-family:system-ui}header{display:flex;gap:20px;align-items:center;margin-bottom:14px}h1{font-size:16px;margin:0}#dropdown{width:240px;height:38px}#app{height:600px}.showcase{display:grid;grid-template-columns:260px 380px 1fr;gap:14px;height:360px;margin-top:30px}.showcase>div{min-width:0}</style></head><body><header><h1>basidekick · UI fixture with simulated data</h1><select id="dropdown" class="bask-navigation-dropdown"></select></header><div class="ux-WebWidget bajaux-container ux-root" style="height:600px;background:white"><div class="bajaux-widget-container" style="height:100%;background:white"><div id="app" class="bajaux-widget"></div></div></div><div class="showcase"><div class="ux-WebWidget" style="height:120px;background:white"><div id="value-card" style="height:100%"></div></div><div id="inspector-launcher"></div><div id="matrix"></div></div><div id="planner" style="height:650px;margin-top:30px"></div><script src="jquery.js"></script><script src="fixture.js"></script><script src="UiFoundation.js"></script><script src="InspectorPanel.js"></script><script src="SavedCharts.js"></script><script src="TrendAnalysis.js"></script><script src="RecentChanges.js"></script><script src="OperationsOverview.js"></script><script src="OperationsDashboard.js"></script><script src="ValueCard.js"></script><script src="InspectorWidget.js"></script><script src="ZoneDeviationMatrix.js"></script><script src="dropdown.js"></script><script src="LinkPlanner.js"></script><script>window.dashboard=new window.Dashboard();dashboard.doInitialize(jQuery('#app'));window.valueCard=new window.ValueCard({properties:{title:'Supply Air Temperature',targetOrd:'station:|slot:/Demo/Supply'}});valueCard.doInitialize(jQuery('#value-card'));window.inspectorWidget=new window.InspectorWidget();inspectorWidget.doInitialize(jQuery('#inspector-launcher'));inspectorWidget.doLoad({getNavOrd:function(){return 'station:|slot:/Demo/Supply';}});window.matrix=new window.Matrix();matrix.doInitialize(jQuery('#matrix'));window.linkPlanner=new window.Planner();linkPlanner.doInitialize(jQuery('#planner'));baskNavigationDropdown('dropdown','Navigate to...',[['Operations','/operations'],['Schedules','/schedules']],true);</script></body></html>''')
+print(output)

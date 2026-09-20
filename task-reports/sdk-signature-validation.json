@@ -1,0 +1,15 @@
+{
+  "checks": [
+    {
+      "sdk": "4.15.1.16",
+      "inspectedClasses": 29,
+      "result": "pass"
+    },
+    {
+      "sdk": "4.15.3.28",
+      "inspectedClasses": 29,
+      "result": "pass"
+    }
+  ],
+  "boundary": "Installed class signatures only. Current source was not compiled or loaded."
+}

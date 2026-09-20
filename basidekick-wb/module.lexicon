@@ -1,0 +1,10 @@
+# basidekick
+
+type.PointInspectorBinding=Point Inspector Binding
+slot.PointInspectorBinding.ord=Point Ord
+slot.PointInspectorBinding.title=Title
+slot.PointInspectorBinding.size=Popup Size
+
+type.NavigationDropdown=Navigation Dropdown
+slot.NavigationDropdown.menu=Navigation Menu
+slot.NavigationDropdown.prompt=Prompt

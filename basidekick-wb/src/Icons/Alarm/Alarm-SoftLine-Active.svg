@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#CF1624" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+  <g>
+    <animate attributeName="opacity" values="1;0.18;1" dur="1s" repeatCount="indefinite"/>
+    <path d="M6 17h12c-1.6-1.6-2-3.2-2-5.5a4 4 0 00-8 0c0 2.3-.4 3.9-2 5.5z"></path>
+              <path d="M10.3 20a1.8 1.8 0 003.4 0"></path>
+  </g>
+</svg>

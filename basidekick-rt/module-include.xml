@@ -1,0 +1,12 @@
+<types>
+  <type class="com.qagraphics.basidekick.BThemeMode" name="ThemeMode" />
+  <type class="com.qagraphics.basidekick.BChartLibrary" name="ChartLibrary" />
+  <type class="com.qagraphics.basidekick.BSavedChart" name="SavedChart" />
+  <type class="com.qagraphics.basidekick.BNavigationMenu" name="NavigationMenu" />
+  <type class="com.qagraphics.basidekick.BNavigationItem" name="NavigationItem" />
+  <type class="com.qagraphics.basidekick.BPointSummary" name="PointSummary" />
+  <type class="com.qagraphics.basidekick.BEquipmentProof" name="EquipmentProof" />
+  <type class="com.qagraphics.basidekick.BNumericSmoother" name="NumericSmoother" />
+  <type class="com.qagraphics.basidekick.BPeakMonitor" name="PeakMonitor" />
+  <type class="com.qagraphics.basidekick.BLinkPlanner" name="LinkPlanner" />
+</types>

@@ -1,0 +1,24 @@
+<types>
+  <type class="com.qagraphics.basidekick.ui.BPointInspectorBinding" name="PointInspectorBinding">
+    <agent><on type="bajaui:Widget" /></agent>
+  </type>
+  <type class="com.qagraphics.basidekick.ui.BHxPointInspectorBinding" name="HxPointInspectorBinding">
+    <agent requiredPermissions="r"><on type="basidekick:PointInspectorBinding" /></agent>
+  </type>
+  <type class="com.qagraphics.basidekick.ui.BIconStyle" name="IconStyle" />
+  <type class="com.qagraphics.basidekick.ui.BIconMode" name="IconMode" />
+  <type class="com.qagraphics.basidekick.ui.BIconType" name="IconType" />
+  <type class="com.qagraphics.basidekick.ui.BNavIcon" name="NavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BNeutralNavIcon" name="NeutralNavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BSingleColorNavIcon" name="SingleColorNavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BDuotoneNavIcon" name="DuotoneNavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BAlarmNavIcon" name="AlarmNavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BSingleColorAlarmNavIcon" name="SingleColorAlarmNavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BDuotoneAlarmNavIcon" name="DuotoneAlarmNavIcon" />
+  <type class="com.qagraphics.basidekick.ui.BNavigationDropdown" name="NavigationDropdown" />
+  <type class="com.qagraphics.basidekick.ui.BHxNavigationDropdown" name="HxNavigationDropdown">
+    <agent requiredPermissions="r">
+      <on type="basidekick:NavigationDropdown" />
+    </agent>
+  </type>
+</types>

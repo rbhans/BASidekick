@@ -1,0 +1,10 @@
+{
+  "registeredTypes": 34,
+  "manualSlotContracts": 69,
+  "unchangedSvgFiles": 109,
+  "javaScriptSyntax": "pass",
+  "xmlAndPaletteReferences": "pass",
+  "nativeIconSource": "namespace changes only",
+  "niagaraCompilation": "not run",
+  "niagaraRuntime": "not run"
+}

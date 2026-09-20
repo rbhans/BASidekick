@@ -1,0 +1,601 @@
+<bajaObjectGraph version="4.0">
+  <p m="b=baja" t="b:Folder">
+    <p n="Graphics" t="b:Folder">
+      <p n="Icons" t="b:Folder">
+        <p n="Illustrated" t="b:Folder">
+          <p n="Site$20$2f$20Campus" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="siteCampus" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/SiteCampus/SiteCampus-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Home" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="home" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Home/Home-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Alarm" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="alarm" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Alarm/Alarm-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Schedules" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="schedules" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Schedules/Schedules-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Trends" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="trends" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Trends/Trends-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Users" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="users" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Users/Users-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Dashboard" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="dashboard" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Dashboard/Dashboard-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Weather" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="weather" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Weather/Weather-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Air$20Systems" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="airSystems" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/AirSystems/AirSystems-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Water$20Systems" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="waterSystems" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/WaterSystems/WaterSystems-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Floor$20Plans" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="floorPlans" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/FloorPlans/FloorPlans-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Reports" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="reports" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Reports/Reports-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Miscellaneous" m="bask=basidekick" t="bask:NavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="miscellaneous" />
+            <p n="style" t="bask:IconStyle" v="illustrated" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Miscellaneous/Miscellaneous-Illustrated.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+        </p>
+        <p n="Soft$20Line" t="b:Folder">
+          <p n="Site$20$2f$20Campus" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="siteCampus" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/SiteCampus/SiteCampus-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Home" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="home" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Home/Home-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Alarm" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="alarm" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Alarm/Alarm-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Schedules" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="schedules" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Schedules/Schedules-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Trends" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="trends" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Trends/Trends-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Users" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="users" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Users/Users-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Dashboard" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="dashboard" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Dashboard/Dashboard-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Weather" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="weather" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Weather/Weather-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Air$20Systems" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="airSystems" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/AirSystems/AirSystems-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Water$20Systems" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="waterSystems" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/WaterSystems/WaterSystems-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Floor$20Plans" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="floorPlans" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/FloorPlans/FloorPlans-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Reports" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="reports" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Reports/Reports-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Miscellaneous" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="miscellaneous" />
+            <p n="style" t="bask:IconStyle" v="softLine" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Miscellaneous/Miscellaneous-SoftLine.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+        </p>
+        <p n="Solid$20Glyph" t="b:Folder">
+          <p n="Site$20$2f$20Campus" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="siteCampus" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/SiteCampus/SiteCampus-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Home" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="home" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Home/Home-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Alarm" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="alarm" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Alarm/Alarm-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Schedules" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="schedules" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Schedules/Schedules-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Trends" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="trends" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Trends/Trends-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Users" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="users" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Users/Users-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Dashboard" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="dashboard" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Dashboard/Dashboard-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Weather" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="weather" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Weather/Weather-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Air$20Systems" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="airSystems" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/AirSystems/AirSystems-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Water$20Systems" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="waterSystems" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/WaterSystems/WaterSystems-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Floor$20Plans" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="floorPlans" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/FloorPlans/FloorPlans-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Reports" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="reports" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Reports/Reports-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Miscellaneous" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="miscellaneous" />
+            <p n="style" t="bask:IconStyle" v="solidGlyph" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Miscellaneous/Miscellaneous-SolidGlyph.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+        </p>
+        <p n="Schematic" t="b:Folder">
+          <p n="Site$20$2f$20Campus" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="siteCampus" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/SiteCampus/SiteCampus-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Home" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="home" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Home/Home-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Alarm" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="alarm" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Alarm/Alarm-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Schedules" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="schedules" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Schedules/Schedules-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Trends" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="trends" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Trends/Trends-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Users" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="users" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Users/Users-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Dashboard" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="dashboard" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Dashboard/Dashboard-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Weather" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="weather" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Weather/Weather-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Air$20Systems" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="airSystems" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/AirSystems/AirSystems-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Water$20Systems" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="waterSystems" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/WaterSystems/WaterSystems-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Floor$20Plans" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="floorPlans" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/FloorPlans/FloorPlans-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Reports" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="reports" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Reports/Reports-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+          <p n="Miscellaneous" m="bask=basidekick" t="bask:NeutralNavIcon">
+            <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,40.0,40.0" />
+            <p n="iconType" t="bask:IconType" v="miscellaneous" />
+            <p n="style" t="bask:IconStyle" v="schematic" />
+            <p n="image" m="gx=gx" t="gx:Image" v="module://basidekick/Icons/Miscellaneous/Miscellaneous-Schematic.svg" />
+            <p n="scale" m="ui=bajaui" t="ui:ScaleMode" v="fitRatio" />
+            <p n="ValueBinding" m="ui=bajaui" t="ui:ValueBinding">
+              <p n="hyperlink" t="b:Ord" v="slot:" />
+            </p>
+          </p>
+        </p>
+      </p>
+      <p n="Data$20Displays" t="b:UnrestrictedFolder">
+        <p n="Value$20Card" m="wb=workbench" t="wb:WebWidget">
+          <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,260.0,120.0" />
+          <p n="js" t="b:Ord" v="view:basidekick:ValueCardWidget" />
+        </p>
+      </p>
+    </p>
+    <p n="Navigation" t="b:Folder">
+      <p n="Dropdown" m="bask=basidekick" t="bask:NavigationDropdown">
+        <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,240.0,38.0" />
+      </p>
+      <p n="NavigationMenu" m="bask=basidekick" t="bask:NavigationMenu">
+        <p n="Home" m="bask=basidekick" t="bask:NavigationItem">
+          <p n="label" v="Home" />
+          <p n="target" t="b:Ord" v="station:|slot:/" />
+        </p>
+      </p>
+      <p n="NavigationItem" m="bask=basidekick" t="bask:NavigationItem" />
+    </p>
+    <p n="Operations" t="b:Folder">
+      <p n="Operations$20Dashboard" m="wb=workbench" t="wb:WebWidget">
+        <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,960.0,600.0" />
+        <p n="js" t="b:Ord" v="view:basidekick:OperationsDashboardWidget" />
+      </p>
+      <p n="Zone$20Deviation$20Matrix" m="wb=workbench" t="wb:WebWidget">
+        <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,720.0,420.0" />
+        <p n="js" t="b:Ord" v="view:basidekick:ZoneDeviationMatrixWidget" />
+      </p>
+    </p>
+    <p n="Histories" t="b:Folder">
+      <p n="BasidekickCharts" m="bask=basidekick" t="bask:ChartLibrary" />
+    </p>
+    <p n="Diagnostics" t="b:Folder">
+      <p n="PointSummary" m="bask=basidekick" t="bask:PointSummary" />
+      <p n="EquipmentProof" m="bask=basidekick" t="bask:EquipmentProof" />
+      <p n="PeakMonitor" m="bask=basidekick" t="bask:PeakMonitor" />
+    </p>
+    <p n="Signal$20Processing" t="b:Folder">
+      <p n="NumericSmoother" m="bask=basidekick" t="bask:NumericSmoother" />
+    </p>
+    <p n="Engineering" t="b:Folder">
+      <p n="LinkPlanner" m="bask=basidekick" t="bask:LinkPlanner" />
+      <p n="Link$20Planner$20View" m="wb=workbench" t="wb:WebWidget">
+        <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,960.0,600.0" />
+        <p n="js" t="b:Ord" v="view:basidekick:LinkPlannerWidget" />
+      </p>
+      <p n="LinkPlannerDemo" t="b:Folder">
+        <p n="Planner" m="bask=basidekick" t="bask:LinkPlanner">
+          <p n="equipmentScope" t="b:Ord" v="station:|slot:/LinkPlannerDemo/Equipment" />
+          <p n="sourcePath" v="Command" />
+          <p n="sourceSlot" v="out" />
+          <p n="targetPath" v="Result" />
+          <p n="targetSlot" v="in16" />
+        </p>
+        <p n="Equipment" t="b:Folder">
+          <p n="Unit1" t="b:Folder">
+            <p n="Command" m="c=control" t="c:BooleanWritable" />
+            <p n="Result" m="c=control" t="c:BooleanWritable" />
+          </p>
+          <p n="Unit2" t="b:Folder">
+            <p n="Command" m="c=control" t="c:BooleanWritable" />
+            <p n="Result" m="c=control" t="c:BooleanWritable" />
+          </p>
+        </p>
+      </p>
+    </p>
+  </p>
+</bajaObjectGraph>

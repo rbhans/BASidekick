@@ -1,0 +1,32 @@
+# basidekick
+
+type.ChartLibrary=Chart Library
+type.SavedChart=Saved Chart
+type.NavigationMenu=Navigation Menu
+type.NavigationItem=Navigation Item
+
+PointSummary=Point Summary
+PointSummary.description=Current values from selected NumericPoints and/or a scoped subtree query. Maximum 500 unique points. Category permissions govern access to derived results.
+PointSummary.queryScope=Query Scope
+PointSummary.resultFacets=Result Facets
+PointSummary.includeSum=Include Sum
+PointSummary.refreshInterval=Refresh Interval
+EquipmentProof=Equipment Proof
+EquipmentProof.description=Independent start and stop proof windows with explicit unavailable and inhibited states. Link failure to standard Niagara alarm logic.
+EquipmentProof.startupGrace=Startup Grace
+EquipmentProof.startDelay=Start Proof Delay
+EquipmentProof.stopDelay=Stop Proof Delay
+PeakMonitor=Peak Monitor
+PeakMonitor.description=Recorded minimum and maximum since reset or station startup. Timestamps reflect station observations, not historical source timestamps.
+NumericSmoother=Numeric Smoother
+NumericSmoother.description=Elapsed-time low-pass filter. Preserves the raw input; invalid input invalidates output and next valid input reseeds.
+NumericSmoother.timeConstant=Time Constant
+LinkPlanner=Link Planner
+LinkPlanner.equipmentScope=Equipment Scope
+LinkPlanner.sourcePath=Relative Source Path
+LinkPlanner.targetPath=Relative Target Path
+LinkPlanner.sourceSlot=Source Slot
+LinkPlanner.targetSlot=Target Slot
+LinkPlanner.applySelected=Apply Selected Rows
+LinkPlanner.undoAddedLinks=Undo Unchanged Added Links
+LinkPlanner.description=Manual property-link planning across equipment children. Preview first; apply selected row numbers. Existing links are never replaced.
