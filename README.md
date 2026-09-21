@@ -23,7 +23,7 @@ This is the short guide to the user-facing pieces in the current module. The RPC
 ### Graphics and icons
 
 - **Icons:** Drag a preset from `Graphics > Icons` onto a PX page. The icon keeps Niagara's normal `ValueBinding` hyperlink behavior. The presets cover illustrated, soft-line, schematic, duotone, solid-glyph and alarm variants.
-- **Icon settings:** `IconType`, `IconStyle` and `IconMode` select the icon artwork, visual treatment and state behavior. The `NavIcon`, `NeutralNavIcon`, `SingleColorNavIcon`, `DuotoneNavIcon`, `SingleColorAlarmNavIcon` and `DuotoneAlarmNavIcon` variants expose the corresponding options.
+- **Icon settings:** `IconType` selects the subject and `IconStyle` selects the artwork treatment. `IconMode` selects light or dark artwork on the neutral and alarm variants. The `NavIcon`, `NeutralNavIcon`, `SingleColorNavIcon`, `DuotoneNavIcon`, `SingleColorAlarmNavIcon` and `DuotoneAlarmNavIcon` variants expose the corresponding options.
 
 ### Navigation
 
@@ -33,15 +33,15 @@ This is the short guide to the user-facing pieces in the current module. The RPC
 
 ### Operations and views
 
-- **Operations Dashboard:** Drag `Operations > Operations Dashboard` onto a PX page. Set the chart library, overview scope, title, refresh interval and light or dark mode as needed. Its tabs cover point health, open alarms, schedules, histories, saved charts and recent audit changes.
-- **Zone Deviation Matrix:** Drag `Operations > Zone Deviation Matrix` onto a PX page. Set the equipment scope plus the relative value and setpoint paths, such as `ZoneTemp` and `ZoneSetpoint`. Rows sort by largest deviation and open the point inspector when selected.
-- **Point Inspector Binding:** This is intentionally not in the palette. Select an existing PX widget, use `Add Property > Point Inspector Binding`, set its point ORD, and optionally change `Title` and `Size`. Clicking the host widget opens the current value, status, alarms, recent changes and optional history.
+- **Operations Dashboard:** Drag `Operations > Operations Dashboard` onto a PX page. Its widget properties include `chartLibrary`, `overviewScopeOrd`, `title`, `healthRefreshSeconds`, `historyParentName`, `showTrendEvents` and `mode`. Its tabs cover point health, open alarms, schedules, histories, saved charts and recent audit changes.
+- **Zone Deviation Matrix:** Drag `Operations > Zone Deviation Matrix` onto a PX page. Set its `scopeOrd`, `valuePath`, `setpointPath` and `refreshSeconds`, such as `ZoneTemp` and `ZoneSetpoint` for the two path properties. Rows sort by largest deviation and open the point inspector when selected.
+- **Point Inspector Binding:** This is intentionally not in the palette. Select an existing PX widget, use `Add Property > Point Inspector Binding`, set the binding's inherited `Ord` slot to the point, and optionally change `Title` and `Size`. Clicking the host widget opens the current value, status, alarms and recent changes. The separately registered `InspectorWidget` view exposes `targetOrd`, `historyOrd`, `auditScopeOrd` and `detailOrd` when you need to configure a view directly; the binding's default view has no history ORD.
 
 Schedules and Recent Changes are dashboard tabs, not separate station components. The schedule tab links to Niagara's full scheduler for edits and exceptions.
 
 ### Histories
 
-- **Chart Library:** Add `Histories > BasidekickCharts` under Services or another station folder. It stores saved chart definitions.
+- **Chart Library:** Drag `Histories > BasidekickCharts` into the station, commonly under Services or another station folder. It stores saved chart definitions. If it is not at the default path, set the dashboard's `chartLibrary` property to its station ORD.
 - **Saved Chart:** Saved charts are children of the Chart Library. In the dashboard, add histories, choose a period, name the chart and press `Save`. Use `Save as new` for another definition. The saved definition includes series, period and analysis settings; the dashboard queries fresh history data when opened.
 
 ### Diagnostics
@@ -62,7 +62,7 @@ Schedules and Recent Changes are dashboard tabs, not separate station components
 
 ## Saved charts
 
-Place the **BasidekickCharts** Chart Library component under Services, or choose another location and set the dashboard's **Chart Library** property to its station ORD. The default is `station:|slot:/Services/BasidekickCharts`.
+Place the **BasidekickCharts** Chart Library component at `station:|slot:/BasidekickCharts`, which is the dashboard's default `chartLibrary` value. You can place it under Services or another station folder and set `chartLibrary` to that component's station ORD. A pre-existing library at `station:|slot:/Services/BasidekickCharts` remains supported.
 
 Add histories, select a time range, enter a name and save. Open a saved chart to query fresh data. **Save** updates the opened setup; **Save as new** creates another. Edits require admin-write permission on the library and the saved record. Read-only users can open charts; history access still depends on their Niagara permissions. Definitions are ordinary persistent station components, included in normal station saves and backups. Mean method, maximum gap and preceding-period comparison are saved with the chart.
 
