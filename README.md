@@ -8,13 +8,57 @@ The source includes the qagraphics icon collection, an Operations Dashboard with
 
 - **Graphics → Icons:** unchanged icon artwork and existing icon variants.
 - **Navigation:** Dropdown, Navigation Menu and Navigation Item.
-- **Operations:** Operations Dashboard.
+- **Operations:** Operations Dashboard and Zone Deviation Matrix.
 - **Histories:** Chart Library.
 - **Diagnostics:** Point Summary, Equipment Proof and Peak Monitor.
 - **Signal Processing:** Numeric Smoother.
-- **Engineering:** Link Planner component and Link Planner View.
+- **Engineering:** Link Planner component, Link Planner View and Link Planner Demo.
 
 The [candidate evaluation](task-reports/2026-09-candidate-evaluation.md) explains the selection. The [follow-up implementation report](task-reports/2026-09-followup-implementation.md) records current behavior, bounds and verification.
+
+## Components
+
+This is the short guide to the user-facing pieces in the current module. The RPC and JavaScript support types are packaged automatically; you do not add those types to a station.
+
+### Graphics and icons
+
+- **Icons:** Drag a preset from `Graphics > Icons` onto a PX page. The icon keeps Niagara's normal `ValueBinding` hyperlink behavior. The presets cover illustrated, soft-line, schematic, duotone, solid-glyph and alarm variants.
+- **Icon settings:** `IconType`, `IconStyle` and `IconMode` select the icon artwork, visual treatment and state behavior. The `NavIcon`, `NeutralNavIcon`, `SingleColorNavIcon`, `DuotoneNavIcon`, `SingleColorAlarmNavIcon` and `DuotoneAlarmNavIcon` variants expose the corresponding options.
+
+### Navigation
+
+- **Navigation Menu:** Add it to the station, then add `Navigation Item` children. Give each item a label and an absolute station or file ORD target.
+- **Dropdown:** Drag `Navigation > Dropdown` onto a PX page and set `Menu` to the Navigation Menu ORD. Set `Prompt` for the closed label. It works in Workbench and Hx without UX Media.
+- **Navigation Item:** Each item is one destination in the menu. Reorder the children to change the displayed order. Up to 100 readable destinations are shown.
+
+### Operations and views
+
+- **Operations Dashboard:** Drag `Operations > Operations Dashboard` onto a PX page. Set the chart library, overview scope, title, refresh interval and light or dark mode as needed. Its tabs cover point health, open alarms, schedules, histories, saved charts and recent audit changes.
+- **Zone Deviation Matrix:** Drag `Operations > Zone Deviation Matrix` onto a PX page. Set the equipment scope plus the relative value and setpoint paths, such as `ZoneTemp` and `ZoneSetpoint`. Rows sort by largest deviation and open the point inspector when selected.
+- **Point Inspector Binding:** This is intentionally not in the palette. Select an existing PX widget, use `Add Property > Point Inspector Binding`, set its point ORD, and optionally change `Title` and `Size`. Clicking the host widget opens the current value, status, alarms, recent changes and optional history.
+
+Schedules and Recent Changes are dashboard tabs, not separate station components. The schedule tab links to Niagara's full scheduler for edits and exceptions.
+
+### Histories
+
+- **Chart Library:** Add `Histories > BasidekickCharts` under Services or another station folder. It stores saved chart definitions.
+- **Saved Chart:** Saved charts are children of the Chart Library. In the dashboard, add histories, choose a period, name the chart and press `Save`. Use `Save as new` for another definition. The saved definition includes series, period and analysis settings; the dashboard queries fresh history data when opened.
+
+### Diagnostics
+
+- **Point Summary:** Add `Diagnostics > PointSummary` to a wire sheet. Set `Points`, `Query Scope`, or both, then read the calculated minimum, maximum, average and quality counts. Enable `Include Sum` when needed. Points should use compatible numeric units.
+- **Equipment Proof:** Add `Diagnostics > EquipmentProof`, link `Command` and `Feedback`, and set the start delay, stop delay and startup grace. `Failure` is a status Boolean suitable for alarm logic; `State` explains proving, failed start or stop, unavailable and inhibited conditions.
+- **Peak Monitor:** Add `Diagnostics > PeakMonitor`, link `Input`, set matching numeric facets and read `Minimum`, `Maximum` and their timestamps. Use `Reset` to begin a new observation window.
+
+### Signal processing
+
+- **Numeric Smoother:** Add `Signal Processing > NumericSmoother`, link `Input`, set matching numeric `Facets` and choose a `Time Constant`. Read `Output`; invalid input invalidates the output and a valid recovery reseeds the smoother. The source point is not changed.
+
+### Engineering
+
+- **Link Planner:** Add `Engineering > LinkPlanner` to the station. Set `Equipment Scope` to a folder whose immediate children are equipment instances, then set relative `Source Path` / `Source Slot` and `Target Path` / `Target Slot`. Preview first, select ready rows and apply only after reviewing the proposed links.
+- **Link Planner View:** Drag `Engineering > Link Planner View` onto a PX page and enter the planner component ORD. It provides Preview, Apply Selected, Undo unchanged added links and Keep links actions.
+- **Link Planner Demo:** Drag `Engineering > LinkPlannerDemo` to the station root to create a safe sample with two BooleanWritable units. Preview the two proposed `Command.out` to `Result.in16` links, apply only Unit1, confirm its result follows Command, then use Undo. The demo does not connect to real equipment.
 
 ## Saved charts
 
