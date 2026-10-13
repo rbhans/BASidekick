@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- basidekick PX background: Perforated Graphite. 3840x2160; use as an image brush, centered. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="2160" viewBox="0 0 3840 2160">
+<defs>
+<radialGradient id="glow0" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(1380 820) scale(1280 720)"><stop offset="0" stop-color="#2b2b2b" stop-opacity="0.72"/><stop offset="0.55" stop-color="#2b2b2b" stop-opacity="0.324"/><stop offset="1" stop-color="#2b2b2b" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2520 1360) scale(1220 700)"><stop offset="0" stop-color="#232323" stop-opacity="0.64"/><stop offset="0.55" stop-color="#232323" stop-opacity="0.288"/><stop offset="1" stop-color="#232323" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2050 560) scale(900 480)"><stop offset="0" stop-color="#303030" stop-opacity="0.48"/><stop offset="0.55" stop-color="#303030" stop-opacity="0.216"/><stop offset="1" stop-color="#303030" stop-opacity="0"/></radialGradient>
+<pattern id="tex" patternUnits="userSpaceOnUse" width="24" height="24"><circle cx="6" cy="6" r="4.2" fill="#000000" fill-opacity="0.221"/><path d="M10.2 6A4.2 4.2 0 0 1 6 10.2" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.238"/><circle cx="18" cy="18" r="4.2" fill="#000000" fill-opacity="0.221"/><path d="M22.2 18A4.2 4.2 0 0 1 18 22.2" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.238"/></pattern>
+</defs>
+<rect width="3840" height="2160" fill="#141414"/>
+<ellipse cx="1380" cy="820" rx="1280" ry="720" fill="url(#glow0)"/>
+<ellipse cx="2520" cy="1360" rx="1220" ry="700" fill="url(#glow1)"/>
+<ellipse cx="2050" cy="560" rx="900" ry="480" fill="url(#glow2)"/>
+<rect width="3840" height="2160" fill="url(#tex)"/>
+</svg>

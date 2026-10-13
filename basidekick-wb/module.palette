@@ -531,6 +531,192 @@
           </p>
         </p>
       </p>
+      <p n="Backgrounds" t="b:Folder">
+        <p n="Light" t="b:Folder">
+          <p n="Brushed" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Brushed-Light.svg) )" />
+          </p>
+          <p n="Linen" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Linen-Light.svg) )" />
+          </p>
+          <p n="Concrete" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Concrete-Light.svg) )" />
+          </p>
+          <p n="Perforated" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Perforated-Light.svg) )" />
+          </p>
+          <p n="Tread$20Plate" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/TreadPlate-Light.svg) )" />
+          </p>
+          <p n="Carbon" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Carbon-Light.svg) )" />
+          </p>
+          <p n="Grid" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Grid-Light.svg) )" />
+          </p>
+          <p n="Dots" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Dots-Light.svg) )" />
+          </p>
+          <p n="Isometric" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Isometric-Light.svg) )" />
+          </p>
+          <p n="Contour" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Contour-Light.svg) )" />
+          </p>
+          <p n="Airflow" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Airflow-Light.svg) )" />
+          </p>
+        </p>
+        <p n="Silver" t="b:Folder">
+          <p n="Brushed" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Brushed-Silver.svg) )" />
+          </p>
+          <p n="Linen" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Linen-Silver.svg) )" />
+          </p>
+          <p n="Concrete" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Concrete-Silver.svg) )" />
+          </p>
+          <p n="Perforated" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Perforated-Silver.svg) )" />
+          </p>
+          <p n="Tread$20Plate" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/TreadPlate-Silver.svg) )" />
+          </p>
+          <p n="Carbon" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Carbon-Silver.svg) )" />
+          </p>
+          <p n="Grid" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Grid-Silver.svg) )" />
+          </p>
+          <p n="Dots" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Dots-Silver.svg) )" />
+          </p>
+          <p n="Isometric" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Isometric-Silver.svg) )" />
+          </p>
+          <p n="Contour" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Contour-Silver.svg) )" />
+          </p>
+          <p n="Airflow" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Airflow-Silver.svg) )" />
+          </p>
+        </p>
+        <p n="Dark" t="b:Folder">
+          <p n="Brushed" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Brushed-Dark.svg) )" />
+          </p>
+          <p n="Linen" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Linen-Dark.svg) )" />
+          </p>
+          <p n="Concrete" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Concrete-Dark.svg) )" />
+          </p>
+          <p n="Perforated" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Perforated-Dark.svg) )" />
+          </p>
+          <p n="Tread$20Plate" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/TreadPlate-Dark.svg) )" />
+          </p>
+          <p n="Carbon" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Carbon-Dark.svg) )" />
+          </p>
+          <p n="Grid" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Grid-Dark.svg) )" />
+          </p>
+          <p n="Dots" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Dots-Dark.svg) )" />
+          </p>
+          <p n="Isometric" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Isometric-Dark.svg) )" />
+          </p>
+          <p n="Contour" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Contour-Dark.svg) )" />
+          </p>
+          <p n="Airflow" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Airflow-Dark.svg) )" />
+          </p>
+        </p>
+        <p n="Graphite" t="b:Folder">
+          <p n="Brushed" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Brushed-Graphite.svg) )" />
+          </p>
+          <p n="Linen" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Linen-Graphite.svg) )" />
+          </p>
+          <p n="Concrete" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Concrete-Graphite.svg) )" />
+          </p>
+          <p n="Perforated" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Perforated-Graphite.svg) )" />
+          </p>
+          <p n="Tread$20Plate" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/TreadPlate-Graphite.svg) )" />
+          </p>
+          <p n="Carbon" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Carbon-Graphite.svg) )" />
+          </p>
+          <p n="Grid" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Grid-Graphite.svg) )" />
+          </p>
+          <p n="Dots" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Dots-Graphite.svg) )" />
+          </p>
+          <p n="Isometric" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Isometric-Graphite.svg) )" />
+          </p>
+          <p n="Contour" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Contour-Graphite.svg) )" />
+          </p>
+          <p n="Airflow" m="ui=bajaui" t="ui:CanvasPane">
+            <p n="layout" t="ui:Layout" v="0.0,0.0,1920.0,1080.0" />
+            <p n="background" m="gx=gx" t="gx:Brush" v="image( source(module://basidekick/Backgrounds/Airflow-Graphite.svg) )" />
+          </p>
+        </p>
+      </p>
     </p>
     <p n="Navigation" t="b:Folder">
       <p n="Dropdown" m="bask=basidekick" t="bask:NavigationDropdown">
@@ -543,6 +729,22 @@
         </p>
       </p>
       <p n="NavigationItem" m="bask=basidekick" t="bask:NavigationItem" />
+    </p>
+    <p n="Layout" t="b:Folder">
+      <p n="Auto$20Grid" m="bask=basidekick" t="bask:AutoGridPane">
+        <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,960.0,480.0" />
+      </p>
+      <p n="Zoom$20Pane" m="bask=basidekick" t="bask:ZoomPane">
+        <p n="layout" m="ui=bajaui" t="ui:Layout" v="0.0,0.0,960.0,540.0" />
+        <p n="content" t="ui:CanvasPane">
+          <p n="viewSize" v="1920.0,1080.0" />
+          <p n="background" v="#ffffff" />
+          <p n="Hint" t="ui:Label">
+            <p n="layout" t="ui:Layout" v="60.0,60.0,520.0,40.0" />
+            <p n="text" v="Put your graphic in this canvas. Scroll to zoom, drag to pan." />
+          </p>
+        </p>
+      </p>
     </p>
     <p n="Operations" t="b:Folder">
       <p n="Operations$20Dashboard" m="wb=workbench" t="wb:WebWidget">

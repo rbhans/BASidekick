@@ -73,6 +73,7 @@ tasks.named<Bajadoc>("bajadoc") {
 tasks.named<Jar>("jar") {
   from("src") {
     include("Icons/**/*.svg")
+    include("Backgrounds/**/*.svg")
     exclude("**/._*", "**/.DS_Store")
   }
 }

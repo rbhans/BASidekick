@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- basidekick PX background: TreadPlate Dark. 3840x2160; use as an image brush, centered. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="2160" viewBox="0 0 3840 2160">
+<defs>
+<radialGradient id="glow0" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(1380 820) scale(1280 720)"><stop offset="0" stop-color="#173150" stop-opacity="0.72"/><stop offset="0.55" stop-color="#173150" stop-opacity="0.324"/><stop offset="1" stop-color="#173150" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2520 1360) scale(1220 700)"><stop offset="0" stop-color="#103a40" stop-opacity="0.64"/><stop offset="0.55" stop-color="#103a40" stop-opacity="0.288"/><stop offset="1" stop-color="#103a40" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2050 560) scale(900 480)"><stop offset="0" stop-color="#1d2b45" stop-opacity="0.48"/><stop offset="0.55" stop-color="#1d2b45" stop-opacity="0.216"/><stop offset="1" stop-color="#1d2b45" stop-opacity="0"/></radialGradient>
+<pattern id="tex" patternUnits="userSpaceOnUse" width="48" height="48"><path d="M7.5 7.5L18.9 18.9" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-opacity="0.153"/><path d="M6.3 6.3L17.7 17.7" stroke="#7d98b6" stroke-width="5" stroke-linecap="round" stroke-opacity="0.06"/><path d="M5.5 5.5L16.9 16.9" stroke="#a9c6ea" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.238"/><path d="M31.5 31.5L42.9 42.9" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-opacity="0.153"/><path d="M30.3 30.3L41.7 41.7" stroke="#7d98b6" stroke-width="5" stroke-linecap="round" stroke-opacity="0.06"/><path d="M29.5 29.5L40.9 40.9" stroke="#a9c6ea" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.238"/><path d="M31.5 18.9L42.9 7.5" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-opacity="0.153"/><path d="M30.3 17.7L41.7 6.3" stroke="#7d98b6" stroke-width="5" stroke-linecap="round" stroke-opacity="0.06"/><path d="M29.5 16.9L40.9 5.5" stroke="#a9c6ea" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.238"/><path d="M7.5 42.9L18.9 31.5" stroke="#000000" stroke-width="5" stroke-linecap="round" stroke-opacity="0.153"/><path d="M6.3 41.7L17.7 30.3" stroke="#7d98b6" stroke-width="5" stroke-linecap="round" stroke-opacity="0.06"/><path d="M5.5 40.9L16.9 29.5" stroke="#a9c6ea" stroke-width="1.6" stroke-linecap="round" stroke-opacity="0.238"/></pattern>
+</defs>
+<rect width="3840" height="2160" fill="#0d141d"/>
+<ellipse cx="1380" cy="820" rx="1280" ry="720" fill="url(#glow0)"/>
+<ellipse cx="2520" cy="1360" rx="1220" ry="700" fill="url(#glow1)"/>
+<ellipse cx="2050" cy="560" rx="900" ry="480" fill="url(#glow2)"/>
+<rect width="3840" height="2160" fill="url(#tex)"/>
+</svg>

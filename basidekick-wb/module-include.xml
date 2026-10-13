@@ -1,10 +1,4 @@
 <types>
-  <type class="com.qagraphics.basidekick.ui.BPointInspectorBinding" name="PointInspectorBinding">
-    <agent><on type="bajaui:Widget" /></agent>
-  </type>
-  <type class="com.qagraphics.basidekick.ui.BHxPointInspectorBinding" name="HxPointInspectorBinding">
-    <agent requiredPermissions="r"><on type="basidekick:PointInspectorBinding" /></agent>
-  </type>
   <type class="com.qagraphics.basidekick.ui.BIconStyle" name="IconStyle" />
   <type class="com.qagraphics.basidekick.ui.BIconMode" name="IconMode" />
   <type class="com.qagraphics.basidekick.ui.BIconType" name="IconType" />
@@ -19,6 +13,18 @@
   <type class="com.qagraphics.basidekick.ui.BHxNavigationDropdown" name="HxNavigationDropdown">
     <agent requiredPermissions="r">
       <on type="basidekick:NavigationDropdown" />
+    </agent>
+  </type>
+  <type class="com.qagraphics.basidekick.ui.BAutoGridPane" name="AutoGridPane" />
+  <type class="com.qagraphics.basidekick.ui.BHxAutoGridPane" name="HxAutoGridPane">
+    <agent>
+      <on type="basidekick:AutoGridPane" />
+    </agent>
+  </type>
+  <type class="com.qagraphics.basidekick.ui.BZoomPane" name="ZoomPane" />
+  <type class="com.qagraphics.basidekick.ui.BHxZoomPane" name="HxZoomPane">
+    <agent>
+      <on type="basidekick:ZoomPane" />
     </agent>
   </type>
 </types>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- basidekick PX background: Isometric Light. 3840x2160; use as an image brush, centered. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="2160" viewBox="0 0 3840 2160">
+<defs>
+<radialGradient id="glow0" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(1380 820) scale(1280 720)"><stop offset="0" stop-color="#d3e4f1" stop-opacity="0.765"/><stop offset="0.55" stop-color="#d3e4f1" stop-opacity="0.344"/><stop offset="1" stop-color="#d3e4f1" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2520 1360) scale(1220 700)"><stop offset="0" stop-color="#d9ece6" stop-opacity="0.68"/><stop offset="0.55" stop-color="#d9ece6" stop-opacity="0.306"/><stop offset="1" stop-color="#d9ece6" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2050 560) scale(900 480)"><stop offset="0" stop-color="#f1e7dc" stop-opacity="0.51"/><stop offset="0.55" stop-color="#f1e7dc" stop-opacity="0.23"/><stop offset="1" stop-color="#f1e7dc" stop-opacity="0"/></radialGradient>
+<pattern id="iso" patternUnits="userSpaceOnUse" width="83.1384" height="48"><path d="M0 0L83.1 48M0 48L83.1 0M0 0V48M41.6 0V48M83.1 0V48" fill="none" stroke="#61768d" stroke-width="1" stroke-opacity="0.16"/><circle cx="0" cy="0" r="1.6" fill="#61768d" fill-opacity="0.45"/><circle cx="83.1384" cy="0" r="1.6" fill="#61768d" fill-opacity="0.45"/><circle cx="0" cy="48" r="1.6" fill="#61768d" fill-opacity="0.45"/><circle cx="83.1384" cy="48" r="1.6" fill="#61768d" fill-opacity="0.45"/><circle cx="41.5692" cy="24.0" r="1.6" fill="#61768d" fill-opacity="0.45"/></pattern>
+</defs>
+<rect width="3840" height="2160" fill="#eef2f6"/>
+<ellipse cx="1380" cy="820" rx="1280" ry="720" fill="url(#glow0)"/>
+<ellipse cx="2520" cy="1360" rx="1220" ry="700" fill="url(#glow1)"/>
+<ellipse cx="2050" cy="560" rx="900" ry="480" fill="url(#glow2)"/>
+<rect width="3840" height="2160" fill="url(#iso)"/>
+</svg>

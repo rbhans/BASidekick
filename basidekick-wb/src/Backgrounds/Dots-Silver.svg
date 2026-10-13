@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- basidekick PX background: Dots Silver. 3840x2160; use as an image brush, centered. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="2160" viewBox="0 0 3840 2160">
+<defs>
+<radialGradient id="glow0" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(1380 820) scale(1280 720)"><stop offset="0" stop-color="#e1e1e1" stop-opacity="0.765"/><stop offset="0.55" stop-color="#e1e1e1" stop-opacity="0.344"/><stop offset="1" stop-color="#e1e1e1" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2520 1360) scale(1220 700)"><stop offset="0" stop-color="#e7e7e7" stop-opacity="0.68"/><stop offset="0.55" stop-color="#e7e7e7" stop-opacity="0.306"/><stop offset="1" stop-color="#e7e7e7" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2050 560) scale(900 480)"><stop offset="0" stop-color="#f8f8f8" stop-opacity="0.51"/><stop offset="0.55" stop-color="#f8f8f8" stop-opacity="0.23"/><stop offset="1" stop-color="#f8f8f8" stop-opacity="0"/></radialGradient>
+<pattern id="dots" patternUnits="userSpaceOnUse" width="24" height="24"><circle cx="12" cy="12" r="1.5" fill="#6b6b6b" fill-opacity="0.42"/></pattern>
+<pattern id="marks" patternUnits="userSpaceOnUse" width="120" height="120"><path d="M60 54V66M54 60H66" fill="none" stroke="#6b6b6b" stroke-width="1.25" stroke-linecap="round" stroke-opacity="0.55"/></pattern>
+</defs>
+<rect width="3840" height="2160" fill="#efefef"/>
+<ellipse cx="1380" cy="820" rx="1280" ry="720" fill="url(#glow0)"/>
+<ellipse cx="2520" cy="1360" rx="1220" ry="700" fill="url(#glow1)"/>
+<ellipse cx="2050" cy="560" rx="900" ry="480" fill="url(#glow2)"/>
+<rect width="3840" height="2160" fill="url(#dots)"/>
+<rect width="3840" height="2160" fill="url(#marks)"/>
+</svg>

@@ -1,25 +1,35 @@
 <types>
+  <!--com.qagraphics.basidekick.ux-->
   <type class="com.qagraphics.basidekick.ux.BNavIconJs" name="NavIconJs">
     <agent>
-      <on type="basidekick:NavIcon" />
-      <on type="basidekick:NeutralNavIcon" />
-      <on type="basidekick:SingleColorNavIcon" />
-      <on type="basidekick:DuotoneNavIcon" />
-      <on type="basidekick:AlarmNavIcon" />
-      <on type="basidekick:SingleColorAlarmNavIcon" />
-      <on type="basidekick:DuotoneAlarmNavIcon" />
+      <on type="basidekick:NavIcon"/>
+      <on type="basidekick:NeutralNavIcon"/>
+      <on type="basidekick:SingleColorNavIcon"/>
+      <on type="basidekick:DuotoneNavIcon"/>
+      <on type="basidekick:AlarmNavIcon"/>
+      <on type="basidekick:SingleColorAlarmNavIcon"/>
+      <on type="basidekick:DuotoneAlarmNavIcon"/>
     </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BOperationsDashboardWidget" name="OperationsDashboardWidget" />
-  <type class="com.qagraphics.basidekick.ux.BOperationsDashboardRpc" name="OperationsDashboardRpc" />
-  <type class="com.qagraphics.basidekick.ux.BChartLibraryRpc" name="ChartLibraryRpc" />
-  <type class="com.qagraphics.basidekick.ux.BDiagnosticsRpc" name="DiagnosticsRpc" />
-  <type class="com.qagraphics.basidekick.ux.BLinkPlannerRpc" name="LinkPlannerRpc" />
+  <type class="com.qagraphics.basidekick.ux.BOperationsDashboardWidget" name="OperationsDashboardWidget"/>
+  <type class="com.qagraphics.basidekick.ux.BOperationsDashboardRpc" name="OperationsDashboardRpc"/>
+  <type class="com.qagraphics.basidekick.ux.BChartLibraryRpc" name="ChartLibraryRpc"/>
+  <type class="com.qagraphics.basidekick.ux.BDiagnosticsRpc" name="DiagnosticsRpc"/>
+  <type class="com.qagraphics.basidekick.ux.BLinkPlannerRpc" name="LinkPlannerRpc"/>
   <type class="com.qagraphics.basidekick.ux.BLinkPlannerWidget" name="LinkPlannerWidget">
-    <agent><on type="basidekick:LinkPlanner" /></agent>
+    <agent>
+      <on type="basidekick:LinkPlanner"/>
+    </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BInspectorWidget" name="InspectorWidget">
-    <agent><on type="control:ControlPoint" /></agent>
+  <type class="com.qagraphics.basidekick.ux.BZoneDeviationMatrixWidget" name="ZoneDeviationMatrixWidget"/>
+  <type class="com.qagraphics.basidekick.ux.BUxAutoGridPane" name="UxAutoGridPane">
+    <agent>
+      <on type="basidekick:AutoGridPane"/>
+    </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BZoneDeviationMatrixWidget" name="ZoneDeviationMatrixWidget" />
+  <type class="com.qagraphics.basidekick.ux.BUxZoomPane" name="UxZoomPane">
+    <agent>
+      <on type="basidekick:ZoomPane"/>
+    </agent>
+  </type>
 </types>

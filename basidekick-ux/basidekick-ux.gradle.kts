@@ -54,6 +54,9 @@ dependencies {
   api(":box-rt")
   api(":bajaux-ux")
   api(":bajaux-rt")
+  // AutoGridPane.js uses bajaui layout hints and gx Brush/Color/Insets types.
+  api(":bajaui-ux")
+  api(":gx-ux")
   api(":bql-rt")
   api(":control-rt")
   api(":history-rt")

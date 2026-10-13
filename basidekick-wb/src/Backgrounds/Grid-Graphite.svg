@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- basidekick PX background: Grid Graphite. 3840x2160; use as an image brush, centered. -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="3840" height="2160" viewBox="0 0 3840 2160">
+<defs>
+<radialGradient id="glow0" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(1380 820) scale(1280 720)"><stop offset="0" stop-color="#2b2b2b" stop-opacity="0.81"/><stop offset="0.55" stop-color="#2b2b2b" stop-opacity="0.365"/><stop offset="1" stop-color="#2b2b2b" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow1" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2520 1360) scale(1220 700)"><stop offset="0" stop-color="#232323" stop-opacity="0.72"/><stop offset="0.55" stop-color="#232323" stop-opacity="0.324"/><stop offset="1" stop-color="#232323" stop-opacity="0"/></radialGradient>
+<radialGradient id="glow2" gradientUnits="userSpaceOnUse" cx="0" cy="0" r="1" gradientTransform="translate(2050 560) scale(900 480)"><stop offset="0" stop-color="#303030" stop-opacity="0.54"/><stop offset="0.55" stop-color="#303030" stop-opacity="0.243"/><stop offset="1" stop-color="#303030" stop-opacity="0"/></radialGradient>
+<pattern id="minor" patternUnits="userSpaceOnUse" width="24" height="24"><path d="M0.5 0V24M0 0.5H24" fill="none" stroke="#a3a3a3" stroke-width="1" stroke-opacity="0.08"/></pattern>
+<pattern id="major" patternUnits="userSpaceOnUse" width="120" height="120"><path d="M0.5 0V120M0 0.5H120" fill="none" stroke="#a3a3a3" stroke-width="1.25" stroke-opacity="0.17"/></pattern>
+</defs>
+<rect width="3840" height="2160" fill="#141414"/>
+<ellipse cx="1380" cy="820" rx="1280" ry="720" fill="url(#glow0)"/>
+<ellipse cx="2520" cy="1360" rx="1220" ry="700" fill="url(#glow1)"/>
+<ellipse cx="2050" cy="560" rx="900" ry="480" fill="url(#glow2)"/>
+<rect width="3840" height="2160" fill="url(#minor)"/>
+<rect width="3840" height="2160" fill="url(#major)"/>
+</svg>

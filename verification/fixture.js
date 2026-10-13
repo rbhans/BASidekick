@@ -34,7 +34,6 @@ var baja = {
       case 'recentChanges':
         if(window.testAuditDenied)return Promise.reject(new Error('Permission denied'));
         return Promise.resolve(JSON.stringify({rows:[{time:Date.now(),target:'station:|slot:/Equipment/AHU1',slot:'set',operation:'Action invoked',user:'Operator',before:'',after:'21 °C'}],truncated:false,note:'Last recorded operator change; not attribution of current output.'}));
-      case 'inspectPoint': return Promise.resolve(JSON.stringify({ord:args[0],displayName:'Zone Temperature',type:'control:NumericPoint',value:'72.4 °F',numeric:72.4,units:'°F',valid:true,status:'ok',groups:[],writable:false}));
       case 'zoneMatrix': return Promise.resolve(JSON.stringify({rows:[{name:'Zone 104',equipmentOrd:'station:|slot:/Equipment/Zone104',pointOrd:'station:|slot:/Equipment/Zone104/ZoneTemp',value:'76.8 °F',setpoint:'72 °F',numeric:76.8,setpointNumeric:72,deviation:4.8,valid:true,status:'ok',groups:[]},{name:'Zone 101',equipmentOrd:'station:|slot:/Equipment/Zone101',pointOrd:'station:|slot:/Equipment/Zone101/ZoneTemp',value:'Unavailable',setpoint:'72 °F',numeric:null,setpointNumeric:72,deviation:null,valid:false,status:'stale',groups:['stale']}]}));
       case 'preview': window.plannerRows=[{id:'1',equipment:'station:|slot:/Equipment/AHU1',source:'AHU1/command/out',target:'AHU1/proof/command',ready:true,status:'Ready to add'},{id:'2',equipment:'station:|slot:/Equipment/AHU2',source:'AHU2/command/out',target:'AHU2/proof/command',ready:false,status:'Blocked: existing incoming link'}];
         return Promise.resolve(JSON.stringify({token:'preview1',undoCount:0,message:'Preview ready',rows:plannerRows}));
@@ -60,13 +59,8 @@ var baja = {
 };
 window.define = function (deps, factory) {
   if (deps.indexOf('nmodule/basidekick/rc/widgets/OperationsOverview') >= 0) window.Dashboard=factory(baja,MockWidget,jQuery,Promise,window.SavedCharts,window.TrendAnalysis,window.RecentChanges,window.OperationsOverview);
-  else if (deps.indexOf('nmodule/basidekick/rc/widgets/InspectorPanel') >= 0 && deps.indexOf('bajaux/Widget') >= 0) {
-    var value=factory(MockWidget,jQuery,window.UI,window.InspectorPanel);
-    if (!window.ValueCard) window.ValueCard=value; else if(!window.InspectorWidget)window.InspectorWidget=value; else window.Matrix=value;
-  }
-  else if (deps.indexOf('nmodule/basidekick/rc/widgets/UiFoundation') >= 0 && deps.indexOf('Promise') >= 0 && deps.indexOf('bajaux/Widget') < 0) {
-    if(!window.InspectorPanel)window.InspectorPanel=factory(jQuery,Promise,window.UI);else window.OperationsOverview=factory(jQuery,Promise,window.UI);
-  }
+  else if (deps.indexOf('nmodule/basidekick/rc/widgets/UiFoundation') >= 0 && deps.indexOf('bajaux/Widget') >= 0 && deps.indexOf('baja!') < 0) window.Matrix=factory(MockWidget,jQuery,window.UI);
+  else if (deps.indexOf('nmodule/basidekick/rc/widgets/UiFoundation') >= 0 && deps.indexOf('Promise') >= 0 && deps.indexOf('bajaux/Widget') < 0) window.OperationsOverview=factory(jQuery,Promise,window.UI);
   else if (deps.indexOf('Promise') >= 0 && deps.indexOf('baja!') >= 0) window.UI=factory(baja,jQuery,Promise);
   else if (deps.indexOf('nmodule/basidekick/rc/widgets/UiFoundation') >= 0) window.Planner=factory(baja,MockWidget,jQuery,window.UI);
   else if (deps.length===1) window.TrendAnalysis=factory(jQuery);

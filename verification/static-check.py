@@ -22,10 +22,6 @@ for source in root.rglob('*'):
         text = source.read_text()
         assert 'qagraphics:' not in text and 'module://qagraphics' not in text, source
 palette = ET.parse(root/'basidekick-wb/module.palette').getroot()
-wb_types = ET.parse(root/'basidekick-wb/module-include.xml').getroot()
-assert wb_types.find("./type[@name='PointInspectorBinding']/agent/on[@type='bajaui:Widget']") is not None
-assert wb_types.find("./type[@name='HxPointInspectorBinding']/agent/on[@type='basidekick:PointInspectorBinding']") is not None
-assert not any('Inspector' in entry.get('t','') or 'Inspector' in entry.get('n','') for entry in palette.iter('p')), 'Point Inspector belongs in Add Property, not the palette'
 # Native bindings require BWidget parents. A plain folder cannot store their
 # palette prototypes; Niagara's UnrestrictedFolder explicitly permits this.
 for parent in palette.iter('p'):
@@ -38,6 +34,9 @@ for entry in palette.iter('p'):
     typ = entry.get('t','')
     if typ.startswith('bask:'): assert typ.split(':')[1] in registered, typ
     value = entry.get('v','')
+    background = re.search(r'source\((module://basidekick/Backgrounds/[^)]+)\)', value)
+    if background:
+        assert (root/'basidekick-wb/src'/background.group(1).split('module://basidekick/')[1]).is_file(), value
     if value.startswith('module://basidekick/Icons/'):
         assert (root/'basidekick-wb/src'/value.split('module://basidekick/')[1]).is_file(), value
 icons = root/'basidekick-wb/src/Icons'
@@ -46,7 +45,7 @@ files = [p for p in original.rglob('*.svg') if not p.name.startswith('._')]
 for source in files:
     assert source.read_bytes() == (icons/source.relative_to(original)).read_bytes(), source
 for source in (root/'basidekick-wb/src/com/qagraphics/basidekick/ui').glob('*.java'):
-    if source.name.startswith('._') or source.name in ('BNavigationDropdown.java','BHxNavigationDropdown.java','BPointInspectorBinding.java','BHxPointInspectorBinding.java'): continue
+    if source.name.startswith('._') or source.name in ('BNavigationDropdown.java','BHxNavigationDropdown.java','BAutoGridPane.java','BHxAutoGridPane.java'): continue
     original_source = root.parent/'qagraphics/qagraphics-wb/src/com/qagraphics/qagraphics/ui'/source.name
     expected = original_source.read_text().replace('com.qagraphics.qagraphics','com.qagraphics.basidekick').replace('qagraphics:', 'basidekick:').replace('module://qagraphics','module://basidekick')
     assert source.read_text() == expected, source

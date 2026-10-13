@@ -117,28 +117,6 @@ public final class BDiagnosticsRpc extends BObject
       ",\"note\":\"Recorded operator events only. Retention may omit older events; these records do not identify the cause of the current output.\"}";
   }
 
-  /** Return the current, caller-readable state for one local control point. */
-  @NiagaraRpc(transports = {@Transport(type = TransportType.box)}, permissions = "unrestricted")
-  public static String inspectPoint(String ord, Context cx) throws Exception
-  {
-    requireUser(cx);
-    BControlPoint point = point(ord, cx);
-    BStatusValue out = point.getOutStatusValue();
-    BStatus status = out == null ? BStatus.nullStatus : out.getStatus();
-    Double numeric = out instanceof BStatusNumeric ? ((BStatusNumeric)out).getValue() : null;
-    String units = unitLabel(point.getFacets().get(BFacets.UNITS), cx);
-    return "{\"ord\":" + json(stationOrd(point)) +
-      ",\"displayName\":" + json(displayName(point, cx)) +
-      ",\"type\":" + json(point.getType().getTypeSpec().toString()) +
-      ",\"value\":" + json(point.getValueWithFacets(cx)) +
-      ",\"numeric\":" + (numeric == null || !Double.isFinite(numeric) ? "null" : numeric.toString()) +
-      ",\"units\":" + json(units) +
-      ",\"valid\":" + status.isValid() +
-      ",\"status\":" + json(status.toString()) +
-      ",\"groups\":" + statusGroups(status) +
-      ",\"writable\":" + point.isWritablePoint() + "}";
-  }
-
   private static String unitLabel(BObject value, Context cx)
   {
     if (!(value instanceof BUnit) || ((BUnit)value).isNull()) return "";
@@ -195,11 +173,6 @@ public final class BDiagnosticsRpc extends BObject
     OrdTarget target = BOrd.make(ord).resolve(null, cx);
     if (!target.canRead() || !(target.get() instanceof BComponent)) throw new PermissionException();
     return (BComponent)target.get();
-  }
-  private static BControlPoint point(String ord, Context cx) throws Exception {
-    BComponent component = component(ord, cx);
-    if (!(component instanceof BControlPoint)) throw new IllegalArgumentException("Select a control point");
-    return (BControlPoint)component;
   }
   private static String relativePath(String path, String label) {
     String value = path == null ? "" : path.trim();

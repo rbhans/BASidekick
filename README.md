@@ -7,7 +7,9 @@ The source includes the qagraphics icon collection, an Operations Dashboard with
 ## Palette
 
 - **Graphics → Icons:** unchanged icon artwork and existing icon variants.
+- **Graphics → Backgrounds:** 44 SVG page backgrounds: 11 textures and patterns, each in Light, Silver, Dark and Graphite.
 - **Navigation:** Dropdown, Navigation Menu and Navigation Item.
+- **Layout:** Auto Grid and Zoom Pane.
 - **Operations:** Operations Dashboard and Zone Deviation Matrix.
 - **Histories:** Chart Library.
 - **Diagnostics:** Point Summary, Equipment Proof and Peak Monitor.
@@ -25,17 +27,32 @@ This is the short guide to the user-facing pieces in the current module. The RPC
 - **Icons:** Drag a preset from `Graphics > Icons` onto a PX page. The icon keeps Niagara's normal `ValueBinding` hyperlink behavior. The presets cover illustrated, soft-line, schematic, duotone, solid-glyph and alarm variants.
 - **Icon settings:** `IconType` selects the subject and `IconStyle` selects the artwork treatment. `IconMode` selects light or dark artwork on the neutral and alarm variants. The `NavIcon`, `NeutralNavIcon`, `SingleColorNavIcon`, `DuotoneNavIcon`, `SingleColorAlarmNavIcon` and `DuotoneAlarmNavIcon` variants expose the corresponding options.
 
+### Backgrounds
+
+- **Files:** `module://basidekick/Backgrounds/<Design>-<Theme>.svg`. Theme is `Light` (cool, slightly blue), `Silver` (pure grayscale light), `Dark` (deep blue) or `Graphite` (pure grayscale dark). Textures: `Brushed` (brushed metal), `Linen`, `Concrete`, `Perforated` (punched metal panel), `TreadPlate` (diamond plate) and `Carbon` (carbon-fibre weave). Patterns: `Grid` (drafting vellum, blueprint, or neutral in Silver/Graphite), `Dots`, `Isometric` (a true 30° lattice for isometric equipment art), `Contour` and `Airflow`. There are no plain gradients, since Niagara's own gradient brushes already cover those.
+- **Use one:** on any PX widget's `Background` (a CanvasPane is typical), choose **Image** and enter one of those ORDs. Leave alignment centered and tiling off. Niagara draws an image brush at the image's own size and never scales it, so each SVG is 3840×2160 and designed so that any centered crop, from about 1024×768 up to 4K, looks complete.
+- **Or drag one:** `Graphics > Backgrounds > Light / Silver / Dark / Graphite` has a 1920×1080 CanvasPane for each, with the background already set. Use it as the page base, or copy its Background.
+- **Pages taller than 2160:** set tiling to `y`. Every design repeats seamlessly top to bottom, and all but Isometric also repeat side to side.
+- **Changing them:** `tools/generate_backgrounds.py` holds the colors and designs. Run it with `python3` and rebuild; the SVGs are regenerated in place.
+
 ### Navigation
 
 - **Navigation Menu:** Add it to the station, then add `Navigation Item` children. Give each item a label and an absolute station or file ORD target.
 - **Dropdown:** Drag `Navigation > Dropdown` onto a PX page and set `Menu` to the Navigation Menu ORD. Set `Prompt` for the closed label. It works in Workbench and Hx without UX Media.
 - **Navigation Item:** Each item is one destination in the menu. Reorder the children to change the displayed order. Up to 100 readable destinations are shown.
 
+### Layout
+
+- **Auto Grid:** Drag `Layout > Auto Grid` onto a PX page and drop widgets straight into it. There's no wrapper pane per child. Columns form from `Min Column Width` (default 240), reflow as the pane width changes, and always line up. Every cell in a row stretches to the tallest one. `Gap` and `Padding` are set once on the pane. `Max Columns` caps the column count; `1` makes a vertical stack. `Fill Row` stretches a short row across the full width (CSS auto-fit); turn it off to keep empty columns (auto-fill). `Row Height` 0 sizes rows to their content.
+- **Card look:** `Card Style` (on by default) draws a rounded surface behind every cell, using `Card Background`, `Card Border Color`, `Card Radius`, `Card Padding` and `Card Shadow`. Turn it off for a plain layout grid.
+- **Where it renders:** Workbench and Hx use the pane's Java layout. PX pages set to UX Media use an equivalent CSS grid. Placed directly in a ScrollPane, it takes the viewport width and grows downward, like FlowPane. For a full-width header above a card wall, nest: an outer Auto Grid with `Max Columns` 1 holding the header and an inner Auto Grid.
+
+- **Zoom Pane:** Works like a ScrollPane: drag `Layout > Zoom Pane` onto a PX page and put your graphic in its `Content`. The palette entry already holds a 1920×1080 CanvasPane, and any widget works. Viewers scroll to zoom around the pointer and drag to pan. Double-click fits, and there are −/100%/+/Fit controls and a minimap showing a live thumbnail and the visible area. Dragging on the graphic pans; bound labels, buttons and other interactive widgets still click normally. Like a scroll pane, the content can't be panned out of view. `Start Fitted` opens it zoomed to fit (on by default; off opens at 100%), `Min/Max Zoom` limit zoom, and `Pan Zoom` off locks the view. Pan and zoom are never saved. It works in Workbench, Hx and UX Media.
+
 ### Operations and views
 
 - **Operations Dashboard:** Drag `Operations > Operations Dashboard` onto a PX page. Its widget properties include `chartLibrary`, `overviewScopeOrd`, `title`, `healthRefreshSeconds`, `historyParentName`, `showTrendEvents` and `mode`. Its tabs cover point health, open alarms, schedules, histories, saved charts and recent audit changes.
-- **Zone Deviation Matrix:** Drag `Operations > Zone Deviation Matrix` onto a PX page. Set its `scopeOrd`, `valuePath`, `setpointPath` and `refreshSeconds`, such as `ZoneTemp` and `ZoneSetpoint` for the two path properties. Rows sort by largest deviation and open the point inspector when selected.
-- **Point Inspector Binding:** This is intentionally not in the palette. Select an existing PX widget, use `Add Property > Point Inspector Binding`, set the binding's inherited `Ord` slot to the point, and optionally change `Title` and `Size`. Clicking the host widget opens the current value, status, alarms and recent changes. The separately registered `InspectorWidget` view exposes `targetOrd`, `historyOrd`, `auditScopeOrd` and `detailOrd` when you need to configure a view directly; the binding's default view has no history ORD.
+- **Zone Deviation Matrix:** Drag `Operations > Zone Deviation Matrix` onto a PX page. Set its `scopeOrd`, `valuePath`, `setpointPath` and `refreshSeconds`, such as `ZoneTemp` and `ZoneSetpoint` for the two path properties. Rows sort by largest deviation.
 
 Schedules and Recent Changes are dashboard tabs, not separate station components. The schedule tab links to Niagara's full scheduler for edits and exceptions.
 
