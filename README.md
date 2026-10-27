@@ -121,4 +121,8 @@ Undo removes only unchanged links added by this planner during the current compo
 
 Source, calculation and simulated browser checks are documented in the [follow-up report](task-reports/2026-09-followup-implementation.md); the [initial report](task-reports/initial-implementation.md) retains the original implementation evidence. Niagara compilation, deployment, and Workbench/station behavior require user-run verification. No build or runtime success is implied.
 
-No AX Community code is included. Original icon and dashboard material comes from the local qagraphics project. The public-release license is still to be selected.
+No AX Community code is included. Original icon and dashboard material comes from the local qagraphics project.
+
+## License
+
+Open source under the [Apache License 2.0](LICENSE): use it, change it and ship it on your own jobs, commercial work included. The license covers this repository's own code, icons, backgrounds and documentation. It doesn't cover Niagara itself or Tridium/Honeywell software, documentation or marks; see [NOTICE.md](NOTICE.md). BASidekick isn't affiliated with Tridium or Honeywell.
