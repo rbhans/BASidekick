@@ -1,6 +1,6 @@
 <types>
-  <!--com.qagraphics.basidekick.ux-->
-  <type class="com.qagraphics.basidekick.ux.BNavIconJs" name="NavIconJs">
+  <!--com.basidekick.basidekick.ux-->
+  <type class="com.basidekick.basidekick.ux.BNavIconJs" name="NavIconJs">
     <agent>
       <on type="basidekick:NavIcon"/>
       <on type="basidekick:NeutralNavIcon"/>
@@ -11,23 +11,23 @@
       <on type="basidekick:DuotoneAlarmNavIcon"/>
     </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BOperationsDashboardWidget" name="OperationsDashboardWidget"/>
-  <type class="com.qagraphics.basidekick.ux.BOperationsDashboardRpc" name="OperationsDashboardRpc"/>
-  <type class="com.qagraphics.basidekick.ux.BChartLibraryRpc" name="ChartLibraryRpc"/>
-  <type class="com.qagraphics.basidekick.ux.BDiagnosticsRpc" name="DiagnosticsRpc"/>
-  <type class="com.qagraphics.basidekick.ux.BLinkPlannerRpc" name="LinkPlannerRpc"/>
-  <type class="com.qagraphics.basidekick.ux.BLinkPlannerWidget" name="LinkPlannerWidget">
+  <type class="com.basidekick.basidekick.ux.BOperationsDashboardWidget" name="OperationsDashboardWidget"/>
+  <type class="com.basidekick.basidekick.ux.BOperationsDashboardRpc" name="OperationsDashboardRpc"/>
+  <type class="com.basidekick.basidekick.ux.BChartLibraryRpc" name="ChartLibraryRpc"/>
+  <type class="com.basidekick.basidekick.ux.BDiagnosticsRpc" name="DiagnosticsRpc"/>
+  <type class="com.basidekick.basidekick.ux.BLinkPlannerRpc" name="LinkPlannerRpc"/>
+  <type class="com.basidekick.basidekick.ux.BLinkPlannerWidget" name="LinkPlannerWidget">
     <agent>
       <on type="basidekick:LinkPlanner"/>
     </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BZoneDeviationMatrixWidget" name="ZoneDeviationMatrixWidget"/>
-  <type class="com.qagraphics.basidekick.ux.BUxAutoGridPane" name="UxAutoGridPane">
+  <type class="com.basidekick.basidekick.ux.BZoneDeviationMatrixWidget" name="ZoneDeviationMatrixWidget"/>
+  <type class="com.basidekick.basidekick.ux.BUxAutoGridPane" name="UxAutoGridPane">
     <agent>
       <on type="basidekick:AutoGridPane"/>
     </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ux.BUxZoomPane" name="UxZoomPane">
+  <type class="com.basidekick.basidekick.ux.BUxZoomPane" name="UxZoomPane">
     <agent>
       <on type="basidekick:ZoomPane"/>
     </agent>

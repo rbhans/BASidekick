@@ -38,7 +38,7 @@ The palette describes the task, not the runtime profile or rendering technology.
 
 | Category | Initial content | Future additions |
 |---|---|---|
-| Graphics / Icons | Existing qagraphics icon families and styles, unchanged | Only genuinely reusable visual elements |
+| Graphics / Icons | Existing icon families and styles, unchanged | Only genuinely reusable visual elements |
 | Navigation | Dropdown, Navigation Menu, Navigation Item | Breadcrumbs, grouped navigation, page selectors |
 | Operations | Operations Dashboard | Focused diagnostic views |
 | Histories | Chart Library; saved chart records are created through the UI | History comparison and export workflows within Trends |
@@ -51,8 +51,8 @@ Keep native widgets in WB, station data/configuration in RT, browser assets and 
 
 ## Initial implementation decisions
 
-- Reuse the qagraphics icons and dashboard under basidekick's module/package namespace. Preserve all 109 actual SVG files byte-for-byte; filesystem metadata sidecars are not icon assets. No qagraphics runtime dependency.
-- No AX Community implementation or binary was imported. Its palette and documentation were research inputs. No qagraphics dropdown implementation was copied.
+- Reuse the existing icons and dashboard under basidekick's module/package namespace. Preserve all 109 actual SVG files byte-for-byte; filesystem metadata sidecars are not icon assets. No runtime dependency on the earlier module.
+- No AX Community implementation or binary was imported. Its palette and documentation were research inputs. No earlier dropdown implementation was copied.
 - Operations Dashboard remains a `workbench:WebWidget` with a basidekick JavaScript provider. This uses Niagara's embedded browser in Workbench and its standard Hx web widget host.
 - Shared charts live under an explicitly configured `ChartLibrary` component. The default ORD is `station:|slot:/Services/BasidekickCharts`. No automatic station mutation creates the library. Chart edits require admin-write permission on the library and edited record; reading respects category permissions. The library can be placed elsewhere and the widget ORD changed.
 - Saved setup contains title, time range, ordered history ORDs, colors and labels. It stores no history samples. Save as new and delete are explicit. Concurrent edits made through the RPC compare revisions before writing.
@@ -63,4 +63,4 @@ Keep native widgets in WB, station data/configuration in RT, browser assets and 
 
 This is source under development, not a compiled or station-tested release. The parent build currently points at N4.15.1.16, while the supplied comparison JARs are from N4.15.3.28. Both API sets should remain compatible with the chosen target; no parent build configuration was changed.
 
-The user has not selected a basidekick release license in this task. Preserve qagraphics attribution and choose the license before public release. AX Community is listed as GPLv2; any future source reuse needs its exact file provenance and license notices recorded rather than relabeling copied code.
+The user has not selected a basidekick release license in this task; choose it before public release. AX Community is listed as GPLv2; any future source reuse needs its exact file provenance and license notices recorded rather than relabeling copied code.

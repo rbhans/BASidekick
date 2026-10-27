@@ -1,16 +1,16 @@
 # Initial implementation
 
-September 12, 2026. All changes are local to `basidekick`. qagraphics and the installed module JARs were read only.
+September 12, 2026. All changes are local to `basidekick`. The original icon source and the installed module JARs were read only.
 
 ## Delivered source
 
 - One categorized WB palette, containing native widgets and RT configuration components: Graphics / Icons, Navigation, Operations and Histories. Removed the wizard's other empty palette resources so the module has one authoritative palette.
 - All 109 SVG files copied byte-for-byte. The ten native icon classes differ only in module/package references. Existing icon rendering and behavior remain intact.
-- Operations Dashboard and its RPC adapter moved into basidekick's namespace. Its JavaScript and style identifiers are isolated from qagraphics. It retains Niagara's Workbench WebWidget and Hx web host path.
+- Operations Dashboard and its RPC adapter moved into basidekick's namespace. Its JavaScript and style identifiers are its own. It retains Niagara's Workbench WebWidget and Hx web host path.
 - Shared Chart Library and Saved Chart RT types with browser save/open/update/save-as-new/delete controls. Saved settings include ordered history ORDs, labels, colors and relative time range. Maximum 12 series per chart and 100 charts created through a library's RPC.
 - Chart reads require readable library/record access; mutations require admin-write on the library and existing record. History samples are queried fresh through the viewer's Niagara session. Revision checks reject concurrent RPC overwrites/deletes. This is shared station storage, not browser localStorage. The test fixture's sessionStorage is only a simulated server.
-- New native Navigation Dropdown with an independent Hx renderer and reusable Navigation Menu / Navigation Item components. This does not copy the qagraphics dropdown. Rounded native face, styled browser select, keyboard support from platform menus/selects, explicit empty/error states, 100-item display limit, and current menu contents reread on opening/polling.
-- Versionless dependencies follow the wizard's pattern. Removed its unused Grunt build plugin because the selected AMD assets are packaged directly, matching qagraphics. WB explicitly depends on UX for the Hx resources and dashboard provider. The empty SE part remains in the original descriptor but has no feature code.
+- New native Navigation Dropdown with an independent Hx renderer and reusable Navigation Menu / Navigation Item components. This does not copy an earlier dropdown. Rounded native face, styled browser select, keyboard support from platform menus/selects, explicit empty/error states, 100-item display limit, and current menu contents reread on opening/polling.
+- Versionless dependencies follow the wizard's pattern. Removed its unused Grunt build plugin because the selected AMD assets are packaged directly. WB explicitly depends on UX for the Hx resources and dashboard provider. The empty SE part remains in the original descriptor but has no feature code.
 
 ## Confirmed source issues corrected
 

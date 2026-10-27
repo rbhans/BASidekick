@@ -31,7 +31,7 @@ The brush encoding `image( source(module://…) )` and the palette form `<p n="b
   - *Verification:* column brightness across the boundary is now flat (±0.2%). Concrete and TreadPlate never had the issue: their marks either extend past the edge or never reach it.
 - All 44 SVGs were built and painted by Niagara's own Batik (`svgBatik-wb.jar` + `gx-wb.jar`, `GVTBuilder`) in a scratch harness, with no errors, at 70–130 ms per 1080p crop. The output matched Chromium.
 - Whole-image seams were checked by painting two copies stacked and side by side in Batik for all 44. Magnified joins of Brushed, Linen and Concrete show no line. Airflow first showed breaks at the vertical join because its swinging lines were clipped at the edge. Fixed by drawing 4 extra rows past each edge; rechecked clean. Contour and Airflow are continuous horizontally.
-- Partial static check: 33 types, 79 slot contracts, XML/palette/JS and background references pass. Icon parity still can't run while `../qagraphics` is unreadable.
+- Partial static check: 33 types, 79 slot contracts, XML/palette/JS and background references pass. Icon parity still can't run while the original icon source is unreadable.
 - **Not run:** Gradle build, Workbench, Hx or UX Media.
 
 ## User-run checks

@@ -1,5 +1,5 @@
 /*
- * Copyright 2026 Ben Hansen. Licensed under the Apache License, Version 2.0.
+ * Copyright 2026 Robert Hansen. Licensed under the Apache License, Version 2.0.
  */
 
 import com.tridium.gradle.plugins.bajadoc.task.Bajadoc
@@ -38,6 +38,8 @@ description = "Open source collection of tools"
 moduleManifest {
   moduleName.set("basidekick")
   runtimeProfile.set(rt)
+  vendor.set("BASidekick")
+  vendorVersion.set("1.0")
 }
 
 // See documentation at module://docDeveloper/doc/build.html#dependencies for the supported
@@ -58,5 +60,5 @@ dependencies {
 tasks.named<Bajadoc>("bajadoc") {
   // Each of the packages you wish to include in your module's API documentation must be
   // enumerated below
-  includePackage("com.qagraphics.basidekick")
+  includePackage("com.basidekick.basidekick")
 }

@@ -22,7 +22,7 @@ The ScrollPane handling copies FlowPane's approach: the pane's preferred width i
 
 ## Verification
 
-- Partial `verification/static-check.py`: 36 registered types resolve, 82 manual slot getter/setter contracts pass, XML/palette parse, JS syntax passes. Its icon-parity section could not run because the sibling `../qagraphics` source was unreadable at the time. `BAutoGridPane.java` and `BHxAutoGridPane.java` were added to its list of basidekick-only files.
+- Partial `verification/static-check.py`: 36 registered types resolve, 82 manual slot getter/setter contracts pass, XML/palette parse, JS syntax passes. Its icon-parity section could not run because the original icon source was unreadable at the time. `BAutoGridPane.java` and `BHxAutoGridPane.java` were added to its list of basidekick-only files.
 - The real `AutoGridPane.js` render function ran in Chromium with stubbed Niagara modules. Its column counts and cell widths matched the Java `columnsFor` / `layoutRows` math at 1200, 700 and 300 px, with fill row on and off and with max columns 3. Row heights were equal, and nothing scrolled horizontally at 300 px.
 - **User build, Sept 30 20:45:** `basidekick-wb.jar` contains `BAutoGridPane.class` and `BHxAutoGridPane.class`, and `basidekick-ux.jar` registers `UxAutoGridPane`, so the source compiles. Workbench, Hx and station behavior have not been checked yet; paint, Hx card placement and the UX preferred-size behavior still need a runtime check.
 

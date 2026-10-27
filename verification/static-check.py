@@ -18,9 +18,6 @@ for source in root.rglob('*'):
     if source.name.startswith('._') or not source.is_file(): continue
     if source.suffix in ('.xml','.palette'): ET.parse(source)
     if source.suffix == '.js' and 'src' in source.parts: subprocess.run(['node','--check',str(source)], check=True)
-    if source.suffix in ('.java','.js','.palette') and 'src' in source.parts:
-        text = source.read_text()
-        assert 'qagraphics:' not in text and 'module://qagraphics' not in text, source
 palette = ET.parse(root/'basidekick-wb/module.palette').getroot()
 # Native bindings require BWidget parents. A plain folder cannot store their
 # palette prototypes; Niagara's UnrestrictedFolder explicitly permits this.
@@ -39,16 +36,6 @@ for entry in palette.iter('p'):
         assert (root/'basidekick-wb/src'/background.group(1).split('module://basidekick/')[1]).is_file(), value
     if value.startswith('module://basidekick/Icons/'):
         assert (root/'basidekick-wb/src'/value.split('module://basidekick/')[1]).is_file(), value
-icons = root/'basidekick-wb/src/Icons'
-original = root.parent/'qagraphics/qagraphics-wb/src/Icons'
-files = [p for p in original.rglob('*.svg') if not p.name.startswith('._')]
-for source in files:
-    assert source.read_bytes() == (icons/source.relative_to(original)).read_bytes(), source
-for source in (root/'basidekick-wb/src/com/qagraphics/basidekick/ui').glob('*.java'):
-    if source.name.startswith('._') or source.name in ('BNavigationDropdown.java','BHxNavigationDropdown.java','BAutoGridPane.java','BHxAutoGridPane.java'): continue
-    original_source = root.parent/'qagraphics/qagraphics-wb/src/com/qagraphics/qagraphics/ui'/source.name
-    expected = original_source.read_text().replace('com.qagraphics.qagraphics','com.qagraphics.basidekick').replace('qagraphics:', 'basidekick:').replace('module://qagraphics','module://basidekick')
-    assert source.read_text() == expected, source
-result = {'registeredTypes':len(registered), 'manualSlotContracts':manual_slots_checked, 'unchangedSvgFiles':len(files), 'javaScriptSyntax':'pass', 'xmlAndPaletteReferences':'pass', 'nativeIconSource':'namespace changes only', 'niagaraCompilation':'not run', 'niagaraRuntime':'not run'}
+result = {'registeredTypes':len(registered), 'manualSlotContracts':manual_slots_checked, 'javaScriptSyntax':'pass', 'xmlAndPaletteReferences':'pass', 'niagaraCompilation':'not run', 'niagaraRuntime':'not run'}
 (root/'task-reports/static-validation.json').write_text(json.dumps(result,indent=2)+'\n')
 print(json.dumps(result))

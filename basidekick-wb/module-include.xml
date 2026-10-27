@@ -1,28 +1,28 @@
 <types>
-  <type class="com.qagraphics.basidekick.ui.BIconStyle" name="IconStyle" />
-  <type class="com.qagraphics.basidekick.ui.BIconMode" name="IconMode" />
-  <type class="com.qagraphics.basidekick.ui.BIconType" name="IconType" />
-  <type class="com.qagraphics.basidekick.ui.BNavIcon" name="NavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BNeutralNavIcon" name="NeutralNavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BSingleColorNavIcon" name="SingleColorNavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BDuotoneNavIcon" name="DuotoneNavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BAlarmNavIcon" name="AlarmNavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BSingleColorAlarmNavIcon" name="SingleColorAlarmNavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BDuotoneAlarmNavIcon" name="DuotoneAlarmNavIcon" />
-  <type class="com.qagraphics.basidekick.ui.BNavigationDropdown" name="NavigationDropdown" />
-  <type class="com.qagraphics.basidekick.ui.BHxNavigationDropdown" name="HxNavigationDropdown">
+  <type class="com.basidekick.basidekick.ui.BIconStyle" name="IconStyle" />
+  <type class="com.basidekick.basidekick.ui.BIconMode" name="IconMode" />
+  <type class="com.basidekick.basidekick.ui.BIconType" name="IconType" />
+  <type class="com.basidekick.basidekick.ui.BNavIcon" name="NavIcon" />
+  <type class="com.basidekick.basidekick.ui.BNeutralNavIcon" name="NeutralNavIcon" />
+  <type class="com.basidekick.basidekick.ui.BSingleColorNavIcon" name="SingleColorNavIcon" />
+  <type class="com.basidekick.basidekick.ui.BDuotoneNavIcon" name="DuotoneNavIcon" />
+  <type class="com.basidekick.basidekick.ui.BAlarmNavIcon" name="AlarmNavIcon" />
+  <type class="com.basidekick.basidekick.ui.BSingleColorAlarmNavIcon" name="SingleColorAlarmNavIcon" />
+  <type class="com.basidekick.basidekick.ui.BDuotoneAlarmNavIcon" name="DuotoneAlarmNavIcon" />
+  <type class="com.basidekick.basidekick.ui.BNavigationDropdown" name="NavigationDropdown" />
+  <type class="com.basidekick.basidekick.ui.BHxNavigationDropdown" name="HxNavigationDropdown">
     <agent requiredPermissions="r">
       <on type="basidekick:NavigationDropdown" />
     </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ui.BAutoGridPane" name="AutoGridPane" />
-  <type class="com.qagraphics.basidekick.ui.BHxAutoGridPane" name="HxAutoGridPane">
+  <type class="com.basidekick.basidekick.ui.BAutoGridPane" name="AutoGridPane" />
+  <type class="com.basidekick.basidekick.ui.BHxAutoGridPane" name="HxAutoGridPane">
     <agent>
       <on type="basidekick:AutoGridPane" />
     </agent>
   </type>
-  <type class="com.qagraphics.basidekick.ui.BZoomPane" name="ZoomPane" />
-  <type class="com.qagraphics.basidekick.ui.BHxZoomPane" name="HxZoomPane">
+  <type class="com.basidekick.basidekick.ui.BZoomPane" name="ZoomPane" />
+  <type class="com.basidekick.basidekick.ui.BHxZoomPane" name="HxZoomPane">
     <agent>
       <on type="basidekick:ZoomPane" />
     </agent>

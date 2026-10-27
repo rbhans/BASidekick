@@ -2,7 +2,7 @@
 
 A Niagara 4.15 collection of practical operator widgets and engineering tools.
 
-The source includes the qagraphics icon collection, an Operations Dashboard with saved-chart analysis and Recent Changes, a native navigation dropdown, and focused diagnostic and engineering components. Dashboard and Link Planner views use the standard Workbench/web WebWidget host; navigation needs no UX Media.
+The source includes the BASidekick icon collection, an Operations Dashboard with saved-chart analysis and Recent Changes, a native navigation dropdown, and focused diagnostic and engineering components. Dashboard and Link Planner views use the standard Workbench/web WebWidget host; navigation needs no UX Media.
 
 ## Palette
 
@@ -121,7 +121,7 @@ Undo removes only unchanged links added by this planner during the current compo
 
 Source, calculation and simulated browser checks are documented in the [follow-up report](task-reports/2026-09-followup-implementation.md); the [initial report](task-reports/initial-implementation.md) retains the original implementation evidence. Niagara compilation, deployment, and Workbench/station behavior require user-run verification. No build or runtime success is implied.
 
-No AX Community code is included. Original icon and dashboard material comes from the local qagraphics project.
+No AX Community code is included. The icons and dashboard are original BASidekick work.
 
 ## License
 
